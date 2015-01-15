@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Convert" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="String - Number Convert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-5C-9b9">
+                                <rect key="frame" x="16" y="28" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2e-aX-Bn7">
+                                <rect key="frame" x="16" y="57" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIO-NO-PRd">
+                                <rect key="frame" x="16" y="95" width="55" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertNumber:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bMd-hT-Tii"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlV-I1-wSP">
+                                <rect key="frame" x="16" y="133" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u2e-aX-Bn7" firstAttribute="leading" secondItem="nXh-5C-9b9" secondAttribute="leading" id="0Sr-R7-dNE"/>
+                            <constraint firstItem="nXh-5C-9b9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="2we-N0-83a"/>
+                            <constraint firstItem="CIO-NO-PRd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="47k-mp-sPB"/>
+                            <constraint firstItem="UlV-I1-wSP" firstAttribute="leading" secondItem="CIO-NO-PRd" secondAttribute="leading" id="A2b-Zj-TbU"/>
+                            <constraint firstItem="u2e-aX-Bn7" firstAttribute="trailing" secondItem="UlV-I1-wSP" secondAttribute="trailing" id="Gaz-Uf-4Vh"/>
+                            <constraint firstItem="CIO-NO-PRd" firstAttribute="leading" secondItem="u2e-aX-Bn7" secondAttribute="leading" id="HTd-Zk-hrL"/>
+                            <constraint firstItem="u2e-aX-Bn7" firstAttribute="trailing" secondItem="nXh-5C-9b9" secondAttribute="trailing" id="Kft-SZ-c36"/>
+                            <constraint firstItem="u2e-aX-Bn7" firstAttribute="top" secondItem="nXh-5C-9b9" secondAttribute="bottom" constant="8" symbolic="YES" id="WSa-YM-AUn"/>
+                            <constraint firstItem="nXh-5C-9b9" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="XLI-EM-DQe"/>
+                            <constraint firstItem="UlV-I1-wSP" firstAttribute="top" secondItem="CIO-NO-PRd" secondAttribute="bottom" constant="8" symbolic="YES" id="Y7O-bT-SEF"/>
+                            <constraint firstItem="CIO-NO-PRd" firstAttribute="top" secondItem="u2e-aX-Bn7" secondAttribute="bottom" constant="8" symbolic="YES" id="dj3-as-znw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="results" destination="UlV-I1-wSP" id="h9x-H9-QKb"/>
+                        <outlet property="userInput" destination="u2e-aX-Bn7" id="9bI-oQ-33g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
