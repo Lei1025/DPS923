@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>276DAD79-607D-40F4-8AE4-929D7D0C8F91</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jan22V1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22F032EFFA6A41A958F21F4071490E94FB88F2EE</key>
+		<string>https://github.com/pbellesa/DPS923.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jan22V1/Jan22V1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22F032EFFA6A41A958F21F4071490E94FB88F2EE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pbellesa/DPS923.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22F032EFFA6A41A958F21F4071490E94FB88F2EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22F032EFFA6A41A958F21F4071490E94FB88F2EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DPS923</string>
+		</dict>
+	</array>
+</dict>
+</plist>
