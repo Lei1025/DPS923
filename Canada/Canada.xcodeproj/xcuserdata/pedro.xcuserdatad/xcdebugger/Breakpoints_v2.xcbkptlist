@@ -15,6 +15,36 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "8"
             endingLineNumber = "8">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Canada.StoreInitializer.__deallocating_deinit"
+                  moduleName = "Canada"
+                  urlString = "file:///Users/pedro/Github/DPS923/Canada/Classes/StoreInitializer.swift"
+                  timestampString = "446660512.393649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Canada.StoreInitializer.init (Canada.StoreInitializer.Type)() -&gt; Canada.StoreInitializer"
+                  moduleName = "Canada"
+                  urlString = "file:///Users/pedro/Github/DPS923/Canada/Classes/StoreInitializer.swift"
+                  timestampString = "446660512.399336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

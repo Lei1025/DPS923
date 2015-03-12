@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00E112E1A9275330029145D /* list-core-data-add in Resources */ = {isa = PBXBuildFile; fileRef = D00E112D1A9275330029145D /* list-core-data-add */; };
+		D00E11301A9275790029145D /* detail-core-data-edit in Resources */ = {isa = PBXBuildFile; fileRef = D00E112F1A9275790029145D /* detail-core-data-edit */; };
+		D00E11321A9275C10029145D /* standard-core-data-add-edit-item in Resources */ = {isa = PBXBuildFile; fileRef = D00E11311A9275C10029145D /* standard-core-data-add-edit-item */; };
+		D00E11341A92798E0029145D /* WebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E11331A92798E0029145D /* WebServiceRequest.swift */; };
 		D078C9B41A7EBAC9007420C3 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = D078C9B31A7EBAC9007420C3 /* Readme.txt */; };
 		D0EBF3471A7E55E400ABA631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3461A7E55E400ABA631 /* AppDelegate.swift */; };
 		D0EBF34C1A7E55E400ABA631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EBF34A1A7E55E400ABA631 /* Main.storyboard */; };
 		D0EBF34E1A7E55E400ABA631 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EBF34D1A7E55E400ABA631 /* Images.xcassets */; };
 		D0EBF3511A7E55E400ABA631 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0EBF34F1A7E55E400ABA631 /* LaunchScreen.xib */; };
 		D0EBF35D1A7E55E400ABA631 /* ClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF35C1A7E55E400ABA631 /* ClassesTests.swift */; };
-		D0EBF36B1A7E571400ABA631 /* ObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3691A7E571400ABA631 /* ObjectModel.xcdatamodeld */; };
 		D0EBF36D1A7E573000ABA631 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF36C1A7E573000ABA631 /* Model.swift */; };
 		D0EBF36F1A7E57CA00ABA631 /* CDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */; };
 		D0EBF39F1A7E89E800ABA631 /* StoreInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */; };
-		EB1F755C1A8BEB4F0013C392 /* Canada.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F755B1A8BEB4F0013C392 /* Canada.swift */; };
-		EB1F755E1A8BEB6B0013C392 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F755D1A8BEB6B0013C392 /* Province.swift */; };
-		EB1F75601A8BF0530013C392 /* ProvinceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F755F1A8BF0530013C392 /* ProvinceList.swift */; };
-		EB1F75621A8BF06B0013C392 /* ProvinceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F75611A8BF06B0013C392 /* ProvinceDetail.swift */; };
+		D0EBF3A11A7E99C500ABA631 /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */; };
+		D0EBF3A31A7E99E200ABA631 /* ExampleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */; };
+		EB8853E21AB0A1F30036DFA4 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E11AB0A1F30036DFA4 /* Launch.swift */; };
+		EB8853E51AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E31AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld */; };
+		EB8853E71AB0AC420036DFA4 /* SportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E61AB0AC420036DFA4 /* SportList.swift */; };
+		EB8853E91AB0AC5A0036DFA4 /* VenueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */; };
+		EB8853EB1AB0AC800036DFA4 /* SportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */; };
+		EB8853ED1AB0AC910036DFA4 /* VenueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,24 +41,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00E112D1A9275330029145D /* list-core-data-add */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "list-core-data-add"; sourceTree = "<group>"; };
+		D00E112F1A9275790029145D /* detail-core-data-edit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "detail-core-data-edit"; sourceTree = "<group>"; };
+		D00E11311A9275C10029145D /* standard-core-data-add-edit-item */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "standard-core-data-add-edit-item"; sourceTree = "<group>"; };
+		D00E11331A92798E0029145D /* WebServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceRequest.swift; sourceTree = "<group>"; };
 		D078C9B31A7EBAC9007420C3 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
-		D0EBF3411A7E55E400ABA631 /* Canada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EBF3411A7E55E400ABA631 /* Toronto 2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toronto 2015.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EBF3451A7E55E400ABA631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EBF3461A7E55E400ABA631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0EBF34B1A7E55E400ABA631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0EBF34D1A7E55E400ABA631 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0EBF3501A7E55E400ABA631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D0EBF3561A7E55E400ABA631 /* CanadaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanadaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EBF3561A7E55E400ABA631 /* Toronto 2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toronto 2015Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EBF35B1A7E55E400ABA631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EBF35C1A7E55E400ABA631 /* ClassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesTests.swift; sourceTree = "<group>"; };
-		D0EBF36A1A7E571400ABA631 /* ObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectModel.xcdatamodel; sourceTree = "<group>"; };
 		D0EBF36C1A7E573000ABA631 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDStack.swift; sourceTree = "<group>"; };
 		D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreInitializer.swift; sourceTree = "<group>"; };
-		EB1F755B1A8BEB4F0013C392 /* Canada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Canada.swift; path = ../Canada.swift; sourceTree = "<group>"; };
-		EB1F755D1A8BEB6B0013C392 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
-		EB1F755F1A8BF0530013C392 /* ProvinceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvinceList.swift; path = ../ProvinceList.swift; sourceTree = "<group>"; };
-		EB1F75611A8BF06B0013C392 /* ProvinceDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvinceDetail.swift; path = ../ProvinceDetail.swift; sourceTree = "<group>"; };
+		D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleList.swift; sourceTree = "<group>"; };
+		D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDetail.swift; sourceTree = "<group>"; };
+		EB8853E11AB0A1F30036DFA4 /* Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		EB8853E41AB0A62B0036DFA4 /* ObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectModel.xcdatamodel; sourceTree = "<group>"; };
+		EB8853E61AB0AC420036DFA4 /* SportList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportList.swift; sourceTree = "<group>"; };
+		EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueList.swift; sourceTree = "<group>"; };
+		EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportDetail.swift; sourceTree = "<group>"; };
+		EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D00E112C1A9274CB0029145D /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				D00E112D1A9275330029145D /* list-core-data-add */,
+				D00E112F1A9275790029145D /* detail-core-data-edit */,
+				D00E11311A9275C10029145D /* standard-core-data-add-edit-item */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
 		D0EBF3381A7E55E400ABA631 = {
 			isa = PBXGroup;
 			children = (
 				D078C9B31A7EBAC9007420C3 /* Readme.txt */,
-				D0EBF3431A7E55E400ABA631 /* Canada */,
+				D0EBF3431A7E55E400ABA631 /* Classes */,
 				D0EBF3591A7E55E400ABA631 /* ClassesTests */,
 				D0EBF3421A7E55E400ABA631 /* Products */,
 			);
@@ -85,26 +109,30 @@
 		D0EBF3421A7E55E400ABA631 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0EBF3411A7E55E400ABA631 /* Canada.app */,
-				D0EBF3561A7E55E400ABA631 /* CanadaTests.xctest */,
+				D0EBF3411A7E55E400ABA631 /* Toronto 2015.app */,
+				D0EBF3561A7E55E400ABA631 /* Toronto 2015Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0EBF3431A7E55E400ABA631 /* Canada */ = {
+		D0EBF3431A7E55E400ABA631 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EB1F755F1A8BF0530013C392 /* ProvinceList.swift */,
-				EB1F75611A8BF06B0013C392 /* ProvinceDetail.swift */,
-				EB1F755B1A8BEB4F0013C392 /* Canada.swift */,
+				D00E112C1A9274CB0029145D /* Templates */,
 				D0EBF3681A7E56E700ABA631 /* Persistence */,
 				D0EBF3461A7E55E400ABA631 /* AppDelegate.swift */,
 				D0EBF34A1A7E55E400ABA631 /* Main.storyboard */,
 				D0EBF34D1A7E55E400ABA631 /* Images.xcassets */,
 				D0EBF34F1A7E55E400ABA631 /* LaunchScreen.xib */,
 				D0EBF3441A7E55E400ABA631 /* Supporting Files */,
+				D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */,
+				D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */,
+				EB8853E11AB0A1F30036DFA4 /* Launch.swift */,
+				EB8853E61AB0AC420036DFA4 /* SportList.swift */,
+				EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */,
+				EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */,
+				EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */,
 			);
-			name = Canada;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -136,11 +164,11 @@
 		D0EBF3681A7E56E700ABA631 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				D0EBF3691A7E571400ABA631 /* ObjectModel.xcdatamodeld */,
-				EB1F755D1A8BEB6B0013C392 /* Province.swift */,
+				EB8853E31AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld */,
 				D0EBF36C1A7E573000ABA631 /* Model.swift */,
 				D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */,
 				D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */,
+				D00E11331A92798E0029145D /* WebServiceRequest.swift */,
 			);
 			name = Persistence;
 			sourceTree = "<group>";
@@ -148,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0EBF3401A7E55E400ABA631 /* Canada */ = {
+		D0EBF3401A7E55E400ABA631 /* Toronto 2015 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0EBF3601A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Canada" */;
+			buildConfigurationList = D0EBF3601A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Toronto 2015" */;
 			buildPhases = (
 				D0EBF33D1A7E55E400ABA631 /* Sources */,
 				D0EBF33E1A7E55E400ABA631 /* Frameworks */,
@@ -160,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = Canada;
+			name = "Toronto 2015";
 			productName = Classes;
-			productReference = D0EBF3411A7E55E400ABA631 /* Canada.app */;
+			productReference = D0EBF3411A7E55E400ABA631 /* Toronto 2015.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0EBF3551A7E55E400ABA631 /* CanadaTests */ = {
+		D0EBF3551A7E55E400ABA631 /* Toronto 2015Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0EBF3631A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "CanadaTests" */;
+			buildConfigurationList = D0EBF3631A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Toronto 2015Tests" */;
 			buildPhases = (
 				D0EBF3521A7E55E400ABA631 /* Sources */,
 				D0EBF3531A7E55E400ABA631 /* Frameworks */,
@@ -178,9 +206,9 @@
 			dependencies = (
 				D0EBF3581A7E55E400ABA631 /* PBXTargetDependency */,
 			);
-			name = CanadaTests;
+			name = "Toronto 2015Tests";
 			productName = ClassesTests;
-			productReference = D0EBF3561A7E55E400ABA631 /* CanadaTests.xctest */;
+			productReference = D0EBF3561A7E55E400ABA631 /* Toronto 2015Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -202,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0EBF33C1A7E55E400ABA631 /* Build configuration list for PBXProject "Canada" */;
+			buildConfigurationList = D0EBF33C1A7E55E400ABA631 /* Build configuration list for PBXProject "Toronto 2015" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,8 +243,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0EBF3401A7E55E400ABA631 /* Canada */,
-				D0EBF3551A7E55E400ABA631 /* CanadaTests */,
+				D0EBF3401A7E55E400ABA631 /* Toronto 2015 */,
+				D0EBF3551A7E55E400ABA631 /* Toronto 2015Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,8 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00E11321A9275C10029145D /* standard-core-data-add-edit-item in Resources */,
+				D00E11301A9275790029145D /* detail-core-data-edit in Resources */,
 				D0EBF34C1A7E55E400ABA631 /* Main.storyboard in Resources */,
 				D0EBF3511A7E55E400ABA631 /* LaunchScreen.xib in Resources */,
+				D00E112E1A9275330029145D /* list-core-data-add in Resources */,
 				D078C9B41A7EBAC9007420C3 /* Readme.txt in Resources */,
 				D0EBF34E1A7E55E400ABA631 /* Images.xcassets in Resources */,
 			);
@@ -248,14 +279,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0EBF36F1A7E57CA00ABA631 /* CDStack.swift in Sources */,
+				EB8853ED1AB0AC910036DFA4 /* VenueDetail.swift in Sources */,
+				EB8853E21AB0A1F30036DFA4 /* Launch.swift in Sources */,
 				D0EBF3471A7E55E400ABA631 /* AppDelegate.swift in Sources */,
-				EB1F75621A8BF06B0013C392 /* ProvinceDetail.swift in Sources */,
-				D0EBF36B1A7E571400ABA631 /* ObjectModel.xcdatamodeld in Sources */,
+				EB8853E91AB0AC5A0036DFA4 /* VenueList.swift in Sources */,
+				D00E11341A92798E0029145D /* WebServiceRequest.swift in Sources */,
+				D0EBF3A31A7E99E200ABA631 /* ExampleDetail.swift in Sources */,
+				EB8853E51AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld in Sources */,
+				EB8853EB1AB0AC800036DFA4 /* SportDetail.swift in Sources */,
 				D0EBF39F1A7E89E800ABA631 /* StoreInitializer.swift in Sources */,
-				EB1F75601A8BF0530013C392 /* ProvinceList.swift in Sources */,
+				D0EBF3A11A7E99C500ABA631 /* ExampleList.swift in Sources */,
+				EB8853E71AB0AC420036DFA4 /* SportList.swift in Sources */,
 				D0EBF36D1A7E573000ABA631 /* Model.swift in Sources */,
-				EB1F755C1A8BEB4F0013C392 /* Canada.swift in Sources */,
-				EB1F755E1A8BEB6B0013C392 /* Province.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +307,7 @@
 /* Begin PBXTargetDependency section */
 		D0EBF3581A7E55E400ABA631 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D0EBF3401A7E55E400ABA631 /* Canada */;
+			target = D0EBF3401A7E55E400ABA631 /* Toronto 2015 */;
 			targetProxy = D0EBF3571A7E55E400ABA631 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -378,9 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Classes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Canada;
+				PRODUCT_NAME = "Toronto 2015";
 			};
 			name = Debug;
 		};
@@ -388,9 +424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Classes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Canada;
+				PRODUCT_NAME = "Toronto 2015";
 			};
 			name = Release;
 		};
@@ -408,7 +445,7 @@
 				);
 				INFOPLIST_FILE = ClassesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CanadaTests;
+				PRODUCT_NAME = "Toronto 2015Tests";
 			};
 			name = Debug;
 		};
@@ -422,14 +459,14 @@
 				);
 				INFOPLIST_FILE = ClassesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = CanadaTests;
+				PRODUCT_NAME = "Toronto 2015Tests";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0EBF33C1A7E55E400ABA631 /* Build configuration list for PBXProject "Canada" */ = {
+		D0EBF33C1A7E55E400ABA631 /* Build configuration list for PBXProject "Toronto 2015" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0EBF35E1A7E55E400ABA631 /* Debug */,
@@ -438,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0EBF3601A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Canada" */ = {
+		D0EBF3601A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Toronto 2015" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0EBF3611A7E55E400ABA631 /* Debug */,
@@ -447,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0EBF3631A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "CanadaTests" */ = {
+		D0EBF3631A7E55E400ABA631 /* Build configuration list for PBXNativeTarget "Toronto 2015Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0EBF3641A7E55E400ABA631 /* Debug */,
@@ -459,12 +496,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D0EBF3691A7E571400ABA631 /* ObjectModel.xcdatamodeld */ = {
+		EB8853E31AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D0EBF36A1A7E571400ABA631 /* ObjectModel.xcdatamodel */,
+				EB8853E41AB0A62B0036DFA4 /* ObjectModel.xcdatamodel */,
 			);
-			currentVersion = D0EBF36A1A7E571400ABA631 /* ObjectModel.xcdatamodel */;
+			currentVersion = EB8853E41AB0A62B0036DFA4 /* ObjectModel.xcdatamodel */;
 			path = ObjectModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
