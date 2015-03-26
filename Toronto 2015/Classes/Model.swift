@@ -28,35 +28,51 @@ class Model {
         
         return frc
     }()
+    
+    lazy var frc_sport: NSFetchedResultsController = {
+        
+        // Use this as a template to create other fetched results controllers
+        let frc = self.cdStack.frcForEntityNamed("Sport", withPredicateFormat: nil, predicateObject: nil, sortDescriptors: "sportName,true", andSectionNameKeyPath: nil)
+        
+        return frc
+    }()
+    
+    lazy var frc_venue: NSFetchedResultsController = {
+        
+        // Use this as a template to create other fetched results controllers
+        let frc = self.cdStack.frcForEntityNamed("Venue", withPredicateFormat: nil, predicateObject: nil, sortDescriptors: "venueName,true", andSectionNameKeyPath: nil)
+        
+        return frc
+        }()
 
     // MARK: - Data from the network
     
-    // Property to hold/store the fetched collection
-    var sports = [AnyObject]()
-    var venues = [AnyObject]()
     
     // Method to fetch the collection
-    func sportsGet() -> [AnyObject] {
+    func collectionGet() -> [AnyObject] {
         
+        // Create, configure, and execute a web service request
         let request = WebServiceRequest()
-        request.sendRequestToUrlPath("/sport", forDataKeyName: "Collection", from: self, propertyNamed: "sports")
+        request.sendRequestToUrlPath("/path/to/resource", forDataKeyName: "Collection", from: self, propertyNamed: "collection")
         
-        // Return an empty array; when the request completes,
-        // the WebServiceRequest object will replace the value of 'programs'
-        // with the fetched results, and will send a notification
+        // Return an empty array; when the request completes, a notification will be sent
         return [AnyObject]()
     }
+    func executeFetchRequest(fetchRequest fr: NSFetchRequest) -> [AnyObject] {
+        
+        // Prepare an error object
+        var error: NSError? = nil
+        
+        var results = cdStack.managedObjectContext?.executeFetchRequest(fr, error: &error)
+        
+        if let error = error {
+            print("Fetch request error")
+            results = []
+        }
+        
+        return results!
+    }
     
-//    func venuesGet() -> [AnyObject] {
-//        
-//        let request = WebServiceRequest()
-//        request.sendRequestToUrlPath("/sport", forDataKeyName: "Collection", from: self, propertyNamed: "sports")
-//        
-//        // Return an empty array; when the request completes,
-//        // the WebServiceRequest object will replace the value of 'programs'
-//        // with the fetched results, and will send a notification
-//        return [AnyObject]()
-//    }
 
     // The next two properties may - or may not - survive the final version of the
     

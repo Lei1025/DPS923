@@ -9,27 +9,62 @@
 import UIKit
 
 class VenueDetail: UIViewController {
+    
+    // MARK: - Private Properties
+    
+    // Reference to passed Venue item.
+    var detailItem: Venue!
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var venueImage: UIImageView!
+    @IBOutlet weak var venueName: UILabel!
+    @IBOutlet weak var venueDescription: UITextView!
+    @IBOutlet weak var venueLocation: UILabel!
+    @IBOutlet weak var venueSports: UILabel!
 
+    
+    // MARK: - Controller Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        // Remove inset from ScrollView
+        self.automaticallyAdjustsScrollViewInsets = false;
+        
+        venueImage.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        venueImage.image = UIImage(data: detailItem.photo)
+        venueName.text = self.detailItem.venueName
+        
+        // Set TextView to start at the top.
+        venueDescription.scrollRangeToVisible(NSMakeRange(0, 0))
+        venueDescription.text = self.detailItem.venueDescription
+        
+        venueLocation.text = self.detailItem.location
+        
+        // Clear placeholder text
+        venueSports.text = ""
+        
+        // Add sports to view outlet.
+        for s in self.detailItem.sports{
+            let sport = s as Sport
+            
+            venueSports.text? += "\(sport.sportName) "
+        }
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "toVenueMap" {
+            
+            // Get a reference to the destination view controller
+            let vc = segue.destinationViewController as VenueMap
+            
+            // Pass PDF with map to ViewController
+            vc.mapData = detailItem.map
+        }
     }
-    */
-
 }

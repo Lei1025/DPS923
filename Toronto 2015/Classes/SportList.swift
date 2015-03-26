@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import CoreData
 
-class SportList: UITableViewController {
+class SportList: UITableViewController, NSFetchedResultsControllerDelegate {
     
-    var model : Model!
+    var frc: NSFetchedResultsController!
+    
+    // MARK: - Properties
+    
+    // Passed in by the app delegate during app initialization
+    var model: Model!
+    
+    // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        tableView.rowHeight = 55.0
+        
+        // Configure and load the fetched results controller (frc)
+        
+        frc = model.frc_sport
+        
+        // This controller will be the frc delegate
+        frc.delegate = self;
+        // No predicate (which means the results will NOT be filtered)
+        frc.fetchRequest.predicate = nil;
+        
+        // Create an error object
+        var error: NSError? = nil
+        // Perform fetch, and if there's an error, log it
+        if !frc.performFetch(&error) { println(error?.description) }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,73 +45,63 @@ class SportList: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
+    // MARK: - Table view methods
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+        
+        return self.frc.sections?.count ?? 0
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+        
+        let sectionInfo = self.frc.sections![section] as NSFetchedResultsSectionInfo
+        return sectionInfo.numberOfObjects
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("sportcell", forIndexPath: indexPath) as UITableViewCell
+        
+        self.configureCell(cell, atIndexPath: indexPath)
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    
+    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+        
+        let item = frc.objectAtIndexPath(indexPath) as Sport
+        cell.textLabel!.text = item.sportName
+        
+        // Create new sport logo, sized at 40 points square, to fit into the table view cell
+        let newSize = CGSize(width: 40, height: 40)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        let image = UIImage(data: item.logo)
+        image?.drawInRect(CGRect(origin: CGPointZero, size: newSize))
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        cell.imageView?.image = newImage
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "toSportDetail" {
+            
+            // Get a reference to the destination view controller
+            let vc = segue.destinationViewController as SportDetail
+            
+            // From the data source (the fetched results controller)...
+            // Get a reference to the object for the tapped/selected table view row
+            let item = frc.objectAtIndexPath(self.tableView.indexPathForSelectedRow()!) as Sport
+            
+            // Pass on the object
+            vc.detailItem = item
+            
+            // Configure the view if you wish
+            vc.title = item.sportName
+        }
     }
-    */
 
 }

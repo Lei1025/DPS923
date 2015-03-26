@@ -20,14 +20,16 @@
 		D0EBF36D1A7E573000ABA631 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF36C1A7E573000ABA631 /* Model.swift */; };
 		D0EBF36F1A7E57CA00ABA631 /* CDStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */; };
 		D0EBF39F1A7E89E800ABA631 /* StoreInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */; };
-		D0EBF3A11A7E99C500ABA631 /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */; };
-		D0EBF3A31A7E99E200ABA631 /* ExampleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */; };
+		EB10D50A1ABB143300EA6104 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB10D5091ABB143300EA6104 /* Extensions.swift */; };
 		EB8853E21AB0A1F30036DFA4 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E11AB0A1F30036DFA4 /* Launch.swift */; };
 		EB8853E51AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E31AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld */; };
 		EB8853E71AB0AC420036DFA4 /* SportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E61AB0AC420036DFA4 /* SportList.swift */; };
 		EB8853E91AB0AC5A0036DFA4 /* VenueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */; };
 		EB8853EB1AB0AC800036DFA4 /* SportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */; };
 		EB8853ED1AB0AC910036DFA4 /* VenueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */; };
+		EB8B720E1AB1DEE900895839 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B720D1AB1DEE900895839 /* Sport.swift */; };
+		EB8B72101AB1DEF900895839 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B720F1AB1DEF900895839 /* Venue.swift */; };
+		EBC623401AC1038C00CAB2DF /* VenueMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6233F1AC1038C00CAB2DF /* VenueMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +60,16 @@
 		D0EBF36C1A7E573000ABA631 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDStack.swift; sourceTree = "<group>"; };
 		D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreInitializer.swift; sourceTree = "<group>"; };
-		D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleList.swift; sourceTree = "<group>"; };
-		D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDetail.swift; sourceTree = "<group>"; };
+		EB10D5091ABB143300EA6104 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EB8853E11AB0A1F30036DFA4 /* Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		EB8853E41AB0A62B0036DFA4 /* ObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ObjectModel.xcdatamodel; sourceTree = "<group>"; };
 		EB8853E61AB0AC420036DFA4 /* SportList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportList.swift; sourceTree = "<group>"; };
 		EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueList.swift; sourceTree = "<group>"; };
 		EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportDetail.swift; sourceTree = "<group>"; };
 		EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetail.swift; sourceTree = "<group>"; };
+		EB8B720D1AB1DEE900895839 /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		EB8B720F1AB1DEF900895839 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = ../Venue.swift; sourceTree = "<group>"; };
+		EBC6233F1AC1038C00CAB2DF /* VenueMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		D0EBF3431A7E55E400ABA631 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EBC6233F1AC1038C00CAB2DF /* VenueMap.swift */,
 				D00E112C1A9274CB0029145D /* Templates */,
 				D0EBF3681A7E56E700ABA631 /* Persistence */,
 				D0EBF3461A7E55E400ABA631 /* AppDelegate.swift */,
@@ -125,13 +130,12 @@
 				D0EBF34D1A7E55E400ABA631 /* Images.xcassets */,
 				D0EBF34F1A7E55E400ABA631 /* LaunchScreen.xib */,
 				D0EBF3441A7E55E400ABA631 /* Supporting Files */,
-				D0EBF3A01A7E99C500ABA631 /* ExampleList.swift */,
-				D0EBF3A21A7E99E200ABA631 /* ExampleDetail.swift */,
 				EB8853E11AB0A1F30036DFA4 /* Launch.swift */,
 				EB8853E61AB0AC420036DFA4 /* SportList.swift */,
 				EB8853E81AB0AC5A0036DFA4 /* VenueList.swift */,
 				EB8853EA1AB0AC800036DFA4 /* SportDetail.swift */,
 				EB8853EC1AB0AC910036DFA4 /* VenueDetail.swift */,
+				EB10D5091ABB143300EA6104 /* Extensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,7 +168,9 @@
 		D0EBF3681A7E56E700ABA631 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B720F1AB1DEF900895839 /* Venue.swift */,
 				EB8853E31AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld */,
+				EB8B720D1AB1DEE900895839 /* Sport.swift */,
 				D0EBF36C1A7E573000ABA631 /* Model.swift */,
 				D0EBF36E1A7E57CA00ABA631 /* CDStack.swift */,
 				D0EBF39E1A7E89E800ABA631 /* StoreInitializer.swift */,
@@ -278,17 +284,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8B720E1AB1DEE900895839 /* Sport.swift in Sources */,
+				EB8B72101AB1DEF900895839 /* Venue.swift in Sources */,
 				D0EBF36F1A7E57CA00ABA631 /* CDStack.swift in Sources */,
 				EB8853ED1AB0AC910036DFA4 /* VenueDetail.swift in Sources */,
 				EB8853E21AB0A1F30036DFA4 /* Launch.swift in Sources */,
+				EBC623401AC1038C00CAB2DF /* VenueMap.swift in Sources */,
 				D0EBF3471A7E55E400ABA631 /* AppDelegate.swift in Sources */,
 				EB8853E91AB0AC5A0036DFA4 /* VenueList.swift in Sources */,
 				D00E11341A92798E0029145D /* WebServiceRequest.swift in Sources */,
-				D0EBF3A31A7E99E200ABA631 /* ExampleDetail.swift in Sources */,
 				EB8853E51AB0A62B0036DFA4 /* ObjectModel.xcdatamodeld in Sources */,
 				EB8853EB1AB0AC800036DFA4 /* SportDetail.swift in Sources */,
+				EB10D50A1ABB143300EA6104 /* Extensions.swift in Sources */,
 				D0EBF39F1A7E89E800ABA631 /* StoreInitializer.swift in Sources */,
-				D0EBF3A11A7E99C500ABA631 /* ExampleList.swift in Sources */,
 				EB8853E71AB0AC420036DFA4 /* SportList.swift in Sources */,
 				D0EBF36D1A7E573000ABA631 /* Model.swift in Sources */,
 			);
